@@ -3,7 +3,7 @@
 :user: rails
 #:time_zone: UTC
 :deploy_to: /srv/smile-effect
-:domain: shoppingsweet.de
+:domain: icreatures.de
 #:domain_aliases:
 #  - assets1.yourapp.com
 #  - assets2.yourapp.com
