@@ -1,9 +1,7 @@
 development:
   adapter: mysql
   encoding: utf8
-  reconnect: false
   database: smile_development
-  pool: 5
   username: root
   password: iwg7fh
   host: localhost
@@ -14,9 +12,7 @@ development:
 test:
   adapter: mysql
   encoding: utf8
-  reconnect: false
   database: smile_test
-  pool: 5
   username: root
   password: iwg7fh
   host: localhost
@@ -24,9 +20,7 @@ test:
 production:
   adapter: mysql
   encoding: utf8
-  reconnect: false
   database: smile_production
-  pool: 5
   username: root      
   password: 
   host: localhost

@@ -10,11 +10,7 @@
 :repository: git@github.com:caspa/smile-effect.git
 # Use :app_symlinks to setup directories under public/ that you want to persist
 # across deployments. They'll be symlinked to the shared directory.
-:ssl:
-  :self_signed: true
-  
-:app_symlinks:
-  - assets
+
 #
 # Use :local_config to copy directories straight from your local project directory
 # to the server: these are files that you don't have/want in scm.
