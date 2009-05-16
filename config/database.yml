@@ -27,6 +27,6 @@ production:
   reconnect: false
   database: smile_production
   pool: 5
-  username: deploy      
-  password: deploy_password
+  username: root      
+  password: 
   host: localhost
