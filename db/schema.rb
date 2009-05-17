@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090410193312) do
+ActiveRecord::Schema.define(:version => 20090410193313) do
 
   create_table "attachment_versions", :force => true do |t|
     t.integer  "attachment_id"
@@ -258,6 +258,47 @@ ActiveRecord::Schema.define(:version => 20090410193312) do
     t.boolean  "archived",      :default => false
     t.integer  "created_by_id"
     t.integer  "updated_by_id"
+  end
+
+  create_table "news_article_versions", :force => true do |t|
+    t.integer  "news_article_id"
+    t.integer  "version"
+    t.string   "name"
+    t.string   "slug"
+    t.datetime "release_date"
+    t.integer  "category_id"
+    t.integer  "attachment_id"
+    t.integer  "attachment_version"
+    t.text     "summary"
+    t.text     "body"
+    t.boolean  "published",          :default => false
+    t.boolean  "deleted",            :default => false
+    t.boolean  "archived",           :default => false
+    t.string   "version_comment"
+    t.integer  "created_by_id"
+    t.integer  "updated_by_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "news_articles", :force => true do |t|
+    t.integer  "version"
+    t.integer  "lock_version",       :default => 0
+    t.string   "name"
+    t.string   "slug"
+    t.datetime "release_date"
+    t.integer  "category_id"
+    t.integer  "attachment_id"
+    t.integer  "attachment_version"
+    t.text     "summary"
+    t.text     "body"
+    t.boolean  "published",          :default => false
+    t.boolean  "deleted",            :default => false
+    t.boolean  "archived",           :default => false
+    t.integer  "created_by_id"
+    t.integer  "updated_by_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "page_route_options", :force => true do |t|
