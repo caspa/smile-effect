@@ -8,9 +8,14 @@
 // Remove the scaffolding when you're ready to start doing visual design.
 // Or leave it in if you're happy with how blueprint looks out-of-the-box
 +blueprint-scaffolding
+#background
+  :width 100% 
+  :height 360px
+  :background url("/images/bg.header.png") top left repeat-x #fff
 
 #branding-container
   +container
+  
 	
 #header
   :position relative
@@ -22,7 +27,7 @@
     :right 0px
     :margin-top 1em
   h1
-    +replace-text("/images/smile-effect-logo_web_300px.png")
+    +replace-text("/images/logo.png")
     :width 300px
     :height 100px
   a
@@ -30,6 +35,7 @@
 
 #teaser
   +column(24)
+  :height 270px
 
 #content
   +column(16)

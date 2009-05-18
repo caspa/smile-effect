@@ -157,16 +157,19 @@ hr { background: #ddd; color: #ddd; clear: both; float: none; width: 100%; heigh
 /* line 45, ../../../../../../../../Library/Ruby/Gems/1.8/gems/chriseppstein-compass-0.6.4/frameworks/blueprint/stylesheets/blueprint/modules/_scaffolding.sass */
 hr.space { background: #ddd; color: #ddd; clear: both; float: none; width: 100%; height: .1em; margin: 0 0 1.45em; border: none; background: #fff; color: #fff; }
 
-/* line 12, ../../../app/stylesheets/screen.sass */
+/* line 11, ../../../app/stylesheets/screen.sass */
+#background { width: 100%; height: 360px; background: url("/images/bg.header.png") top left repeat-x #fff; }
+
+/* line 16, ../../../app/stylesheets/screen.sass */
 #branding-container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; }
 /* line 5, ../../../../../../../../Library/Ruby/Gems/1.8/gems/chriseppstein-compass-0.6.4/frameworks/compass/stylesheets/compass/utilities/general/_hacks.sass */
 #branding-container { display: block; }
 
-/* line 15, ../../../app/stylesheets/screen.sass */
+/* line 20, ../../../app/stylesheets/screen.sass */
 #header { position: relative; display: inline; float: left; margin-right: 10px; width: 950px; }
 /* line 97, ../../../../../../../../Library/Ruby/Gems/1.8/gems/chriseppstein-compass-0.6.4/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
 * html #header { overflow-x: hidden; }
-/* line 18, ../../../app/stylesheets/screen.sass */
+/* line 23, ../../../app/stylesheets/screen.sass */
 #header #menu { margin: 0; padding: 0; border: 0; overflow: hidden; display: inline-block; position: absolute; top: 1em; right: 0px; margin-top: 1em; }
 /* line 5, ../../../../../../../../Library/Ruby/Gems/1.8/gems/chriseppstein-compass-0.6.4/frameworks/compass/stylesheets/compass/utilities/general/_hacks.sass */
 #header #menu { display: block; }
@@ -176,29 +179,29 @@ hr.space { background: #ddd; color: #ddd; clear: both; float: none; width: 100%;
 #header #menu li.first { padding-left: 0px; }
 /* line 19, ../../../../../../../../Library/Ruby/Gems/1.8/gems/chriseppstein-compass-0.6.4/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal_list.sass */
 #header #menu li.last { padding-right: 0px; }
-/* line 24, ../../../app/stylesheets/screen.sass */
-#header h1 { text-indent: -9999em; overflow: hidden; background-image: url(/images/smile-effect-logo_web_300px.png); background-repeat: no-repeat; background-position: 50% 50%; width: 300px; height: 100px; }
-/* line 28, ../../../app/stylesheets/screen.sass */
+/* line 29, ../../../app/stylesheets/screen.sass */
+#header h1 { text-indent: -9999em; overflow: hidden; background-image: url(/images/logo.png); background-repeat: no-repeat; background-position: 50% 50%; width: 300px; height: 100px; }
+/* line 33, ../../../app/stylesheets/screen.sass */
 #header a { text-decoration: none; }
 /* line 4, ../../../../../../../../Library/Ruby/Gems/1.8/gems/chriseppstein-compass-0.6.4/frameworks/compass/stylesheets/compass/utilities/links/_hover_link.sass */
 #header a:hover { text-decoration: underline; }
 
-/* line 31, ../../../app/stylesheets/screen.sass */
-#teaser { display: inline; float: left; margin-right: 10px; width: 950px; }
+/* line 36, ../../../app/stylesheets/screen.sass */
+#teaser { display: inline; float: left; margin-right: 10px; width: 950px; height: 270px; }
 /* line 97, ../../../../../../../../Library/Ruby/Gems/1.8/gems/chriseppstein-compass-0.6.4/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
 * html #teaser { overflow-x: hidden; }
 
-/* line 34, ../../../app/stylesheets/screen.sass */
+/* line 40, ../../../app/stylesheets/screen.sass */
 #content { display: inline; float: left; margin-right: 10px; width: 630px; }
 /* line 97, ../../../../../../../../Library/Ruby/Gems/1.8/gems/chriseppstein-compass-0.6.4/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
 * html #content { overflow-x: hidden; }
 
-/* line 37, ../../../app/stylesheets/screen.sass */
+/* line 43, ../../../app/stylesheets/screen.sass */
 #related { display: inline; float: left; margin-right: 0; width: 310px; }
 /* line 97, ../../../../../../../../Library/Ruby/Gems/1.8/gems/chriseppstein-compass-0.6.4/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
 * html #related { overflow-x: hidden; }
 
-/* line 40, ../../../app/stylesheets/screen.sass */
+/* line 46, ../../../app/stylesheets/screen.sass */
 #footer { display: inline; float: left; margin-right: 10px; width: 950px; }
 /* line 97, ../../../../../../../../Library/Ruby/Gems/1.8/gems/chriseppstein-compass-0.6.4/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
 * html #footer { overflow-x: hidden; }
