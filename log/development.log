@@ -16142,3 +16142,25 @@ Processing Cms::TagsController#index to js (for 127.0.0.1 at 2009-05-18 15:26:49
   [4;36;1mContentType Load (0.2ms)[0m   [0;1mSELECT * FROM `content_types` WHERE (`content_types`.`name` = 'Tag') LIMIT 1[0m
   [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM `tags` LIMIT 0, 15[0m
 Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/cms/tags.js]
+~~ Loading extensions from /Library/Ruby/Gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/action_view/base.rb
+~~ Loading extensions from /Library/Ruby/Gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/active_record/base.rb
+~~ Loading extensions from /Library/Ruby/Gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/active_record/connection_adapters/abstract/schema_statements.rb
+~~ Loading extensions from /Library/Ruby/Gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/active_record/errors.rb
+~~ Loading extensions from /Library/Ruby/Gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/active_support/cache/file_store.rb
+~~ Loading extensions from /Library/Ruby/Gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/hash.rb
+~~ Loading extensions from /Library/Ruby/Gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/integer.rb
+~~ Loading extensions from /Library/Ruby/Gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/nil.rb
+~~ Loading extensions from /Library/Ruby/Gems/1.8/gems/browsercms-3.0.0/lib/cms/extensions/string.rb
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mDynamicView Load (0.4ms)[0m   [0mSELECT * FROM `dynamic_views` WHERE (`dynamic_views`.`deleted` = 0) [0m
+  [4;36;1mDynamicView Columns (70.5ms)[0m   [0;1mSHOW FIELDS FROM `dynamic_views`[0m
+  [4;35;1mPageTemplate Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `dynamic_views`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mPageRoute Load (0.3ms)[0m   [0mSELECT * FROM `page_routes` ORDER BY page_routes.name[0m
+  [4;36;1mPageRoute Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `page_routes`[0m
+  [4;35;1mPageRouteRequirement Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `page_route_options`[0m
+  [4;36;1mPageRouteRequirement Load (0.9ms)[0m   [0;1mSELECT * FROM `page_route_options` WHERE (`page_route_options`.page_route_id = 1) AND ( (`page_route_options`.`type` = 'PageRouteRequirement' ) ) [0m
+  [4;35;1mPageRouteCondition Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `page_route_options`[0m
+  [4;36;1mPageRouteCondition Load (1.0ms)[0m   [0;1mSELECT * FROM `page_route_options` WHERE (`page_route_options`.page_route_id = 1) AND ( (`page_route_options`.`type` = 'PageRouteCondition' ) ) [0m
