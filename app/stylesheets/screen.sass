@@ -89,7 +89,7 @@ div
       :height 295px
 
   #teaser_img
-    +column(16)
+    +column(16, true)
 
   #teaserleft
     +column(8)
@@ -101,7 +101,9 @@ div
 
   #teaserright
     +column(8, true)
-   
+  #teaser_img
+    :position relative
+
 #content
   +column(24)
   :font-size 1.2em
