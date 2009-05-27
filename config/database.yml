@@ -1,7 +1,7 @@
 development:
   adapter: mysql
   encoding: utf8
-  database: smile_development
+  database: smileeffect2_development
   username: root
   password: iwg7fh
   host: localhost
@@ -12,7 +12,7 @@ development:
 test:
   adapter: mysql
   encoding: utf8
-  database: smile_test
+  database: smileeffect_test
   username: root
   password: iwg7fh
   host: localhost

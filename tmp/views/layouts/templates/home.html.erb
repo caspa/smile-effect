@@ -6,32 +6,65 @@
 	<%= stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection' %>
 	<%= stylesheet_link_tag 'compiled/print.css', :media => 'print' %>
 
-
+	<!–[if IE]><%= stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection' %><![endif]–> 
 	<title>Smile-Effect</title>
 	<%= yield :html_head %>
 </head>
 <body id="home" class="home-page">
 	<%= cms_toolbar %>
-<div id="background">			
-	<div id="branding-container">
-		<div id="header">
-			<h1>Smile-Effect</h1>
-			<%= render_menu %>
-		</div>
-		<div id="teaser">
-			<%= container :teaser %>
-		</div>
-		<div id="content">
-			<%= container :content %>
-		</div>
-		<div id="related">		
-			<%= container :related %>
-		</div>
-		<div id="footer">
-			<%= container :footer %>	
-		</div>
+<div id="branding_background">
+		<div id="branding-container">
+			<div id="header">
+				<h1>Smile-Effect</h1>
+				<%= render :partial => "partials/menu_static" %>
+			</div>
+			<div id="teaser">
+				<div id="teaserleft">
+					<a href="/marketing"><%= image_tag "buttons/btn.marketing.png", :class => "img_left" %></a>
+				</div>
+				<div id="teasercenter">		
+					<a href="/web"><%= image_tag "buttons/btn.web.png", :class => "img_center" %></a>
+				</div>
+				<div id="teaserright">		
+					<a href="/design"><%= image_tag "buttons/btn.design.png", :class => "img_right" %></a>
+				</div>
+			</div>
+			<div id="content">
+				<div id="contentleft" class="theme_marketing"><div class="tab">
+					<%= container :contentleft %>
+				</div>
 </div>
+				<div id="contentcenter" class="theme_web"><div class="tab">		
+					<%= container :contentcenter %>
+				</div>
 </div>
+				<div id="contentright" class="theme_design"><div class="tab">		
+					<%= container :contentright %>
+				</div>
+</div>
+			</div>
 
-</body>
-</html>
+				<div id="footer">
+					<div id="footercontentleft">
+						<%= container :footercontentleft %>
+					</div>
+					<div id="footercontentcenter">		
+						<%= container :footercontentcenter %>
+
+					</div>
+					<div id="footercontentright">		
+						<%= container :footercontentright %>
+
+					</div>	
+				</div>
+			</div>
+</div>
+<div id="copyright_background">
+<div id="branding-container">
+<%= render :partial => "partials/footer" %>
+</div>
+</div>
+	</body>
+	</html>
+
+
