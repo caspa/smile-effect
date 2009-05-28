@@ -173,7 +173,6 @@ div
 
 #footer
   +column(24)
-  :padding-bottom 60px
   :font-size 1em
   :border-top 1px solid #DDDDDD
   :padding-top 20px
@@ -192,9 +191,7 @@ div
 
 #copyright_background
   :overflow visible
-  :position fixed
-  :left 0px
-  :bottom 0px
+  :position relative
   :border-top 1px solid #DDDDDD
   :background-color #000000
   :color #FFF
@@ -204,6 +201,7 @@ div
     :text-decoration none
   a:hover
     :text-decoration underline
+    +set-alpha(0.5)
 
 #copyright
   +column(24)
@@ -212,9 +210,9 @@ div
 #copyright_a
   +column(3)
 #copyright_b
-  +column(9)
+  +column(7)
 #copyright_c
-  +column(9)
+  +column(10)
 #copyright_d
   +column(3,true)
 .img_spacer
