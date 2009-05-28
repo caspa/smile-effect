@@ -20,10 +20,10 @@
 			</div>
 			<div id="teaser">
 				<div id="teaserleft">
-		<%= render :partial => "partials/ambient", :locals => {:image => @page.name} %>			
+	<%= render :partial =>"partials/ambient"%>			
 				</div>
 				<div id="teaser_img">	
-<%= render :partial => "partials/teaser_img", :locals => {:image => @page.name}%>	
+<%= render :partial => "partials/teaser_img"%>	
 				
 						
 				
@@ -31,17 +31,20 @@
 			</div>
 			<div id="content">
 				<div id="contentleft" class="theme_marketing"><div class="tab">
-					
+<a href="#" class="arrow">Preisrechner</a>				
+<hr/>
+<a href="#" class="arrow">Leistungen</a>	
+<hr/>
+<a href="#" class="arrow">Produkte</a>	
+	
+<hr/>
 				</div>
 </div>
-				<div id="contentcenter" class="theme_web"><div class="tab">		
-					
+			<div id="calculator"><div class="tab">	
+<%= render :partial => "partials/calculator" %>
 				</div>
 </div>
-				<div id="contentright" class="theme_design"><div class="tab">		
-					
-				</div>
-</div>
+
 			</div>
 <%= render :partial => "partials/footercontent" %>
 			</div>

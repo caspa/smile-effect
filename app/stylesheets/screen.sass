@@ -13,7 +13,23 @@
   :filter alpha(opacity=!arg*100)
   :opacity = !arg
   :-moz-opacity = !arg
-	
+
+=set-arrowleft
+  :background url("/images/buttons/btn.arrow.png") center left no-repeat transparent
+  :padding-left 20px
+  :line-height 24px
+  :height 24px
+  :position relative
+  :white-space nowrap
+  :display block
+  :text-decoration none
+  :font-weight bold
+  :font-size 24px
+  :color #000
+
+    
+  
+
 =set-tab
   :border-left 1px solid #DDD
   :padding-left 10px
@@ -21,6 +37,25 @@
 
 .tab
   +set-tab
+
+.arrow
+  +set-arrowleft
+  :margin-left 0px
+  :margin-right 5px
+.arrow:hover 
+  :margin-left 5px
+  :margin-right 0px
+  +set-alpha(0.5)
+ 
+hr 
+  :border 0
+  :border-bottom 1px solid #ddd
+  :height 1px 
+  :display block
+  :padding-top 10px
+  :padding-bottom 10px
+  :clear both
+  :background transparent
 
 body
   :margin 0px
@@ -38,6 +73,7 @@ div
 
 #branding-container
   +container
+
   :overflow visible
 
 .on a, #header #menu a:hover
@@ -77,6 +113,13 @@ div
     :height 100px
   a
     +hover-link
+#calculator
+  +column(15) 
+
+  table
+    +alternating-rows-and-columns(#eee, #fff, #fff)
+    :width 100%
+
 
 #teaser
   +column(24)
@@ -130,6 +173,7 @@ div
 
 #footer
   +column(24)
+  :padding-bottom 60px
   :font-size 1em
   :border-top 1px solid #DDDDDD
   :padding-top 20px
@@ -147,12 +191,20 @@ div
   :position relative
 
 #copyright_background
+  :overflow visible
+  :position fixed
+  :left 0px
+  :bottom 0px
   :border-top 1px solid #DDDDDD
   :background-color #000000
   :color #FFF
   :height 60px
   a
     :color #FFF
+    :text-decoration none
+  a:hover
+    :text-decoration underline
+
 #copyright
   +column(24)
   :font-size 1em
